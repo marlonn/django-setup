@@ -6,7 +6,7 @@
 # could not figure out how to properly escape for sed.
 
 
-# Variablen
+# variables
 project_dir=test
 envname=test-env
 project_name=test1
@@ -16,7 +16,7 @@ AppName=Dummy
 script_location=~/bin
 port=3000   # port number for running the dev server
 
-# python-skripte
+# python-skripts
 mkdir $script_location || true
 cat <<HEK>> $script_location/insert-line.py
 # -*- coding: utf-8 -*-
@@ -79,7 +79,7 @@ source $envname/bin/activate # exit with 'deactivate'
 
 pip install django pyyaml pytz # djangorestframework etc
 
-django-admin.py startproject $project_name . 
+django-admin.py startproject $project_name .
 python manage.py startapp $app_name
 
 # define app in settings.py
